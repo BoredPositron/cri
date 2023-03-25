@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jumbled Words Puzzle</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Smol quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="card">
-	<div class="container">
-		<h1 id = "Biryani"> Unjumble the words below to find a secret code</h1>
-		<h1 id="JumbledWords">Purely love our onion</h1>
-		<div id="jumble"></div>
-		<div id="answer"></div>
-        <input type="text" id="user-answer" placeholder="Enter your answer here">
-		<button onclick="checkAnswer()">Check Answer</button>
-	</div>
-</div>	
-	<script src="script.js"></script>
+  <h1>Smol quiz for you mwah</h1>
+  <div class="card" id="puzzle">
+    <h2>Clues</h2>
+    <ul>
+      <li>The honeymoon city</li>
+      <li>The number of kids we want to have or do we just want to enjoy the process without results hehehe</li>
+      <li>The location of our dream home</li>
+      <li>Wedding destination</li>
+	  <li>Location of dream proposal</li>
+	  <li>City we want to live in together</li>
+	</ul>
+    
+    <h2>Answers</h2>
+    <form>
+      <label for="honeymoon">Honeymoon Destination:</label>
+      <input type="text" id="honeymoon" name="honeymoon"><br><br>
+      
+      <label for="kids">Number of Kids:</label>
+      <input type="number" id="kids" name="kids"><br><br>
+      
+      <label for="home">Dream Home Location:</label>
+      <input type="text" id="home" name="home"><br><br>
+      
+      <label for="wedding">Dream Wedding Location</label>
+      <input type="text" id="wedding" name="wedding"><br><br>
+
+	  <label for="proposal">Dream proposal location</label>
+      <input type="text" id="proposal" name="proposal"><br><br>
+
+	  <label for="together">First trip together</label>
+      <input type="text" id="together" name="together"><br><br>
+      
+      <input type="button" value="Submit" onclick="checkAnswers()">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
